@@ -39,6 +39,24 @@
     cursor: pointer;
 }
 
+.grp > text{
+    display: block;
+    padding: 14px 54px 14px 50px; 
+    width: 100%;
+    border: 8px solid;
+    border-image-source: linear-gradient(180deg, #9A37E7 0%, #FF5093 100%);
+    /* border-image-source: linear-gradient(to left, #9A37E7, #FF5093); */
+    border-width: 4px;
+    border-image-slice: 1;
+    border-radius: 10px;
+    background: black;
+    outline: none;
+    font-family: 'B612 Mono', monospace;  
+    color: #868893; 
+    font-weight: 500;
+    font-size: 20px;
+}
+
 .grp > input{
     display: block;
     padding: 14px 54px 14px 50px; 

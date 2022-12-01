@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Auth from './components/auth/Auth';
+import Connect from './components/auth/connectWallet';
 import Main from './components/Main';
 import Profile from './components/profile/Profile';
 import Review from './components/Review';
@@ -16,6 +17,7 @@ function App() {
       <Route path='/review' element={<Review/>} />
       <Route path='/search' element={<Search/>} />
       <Route path='/reviews' element={<ReviewPage/>} />
+      <Route path='/connectWallet' element={<Connect/>} />
     </Routes>
   );
 
