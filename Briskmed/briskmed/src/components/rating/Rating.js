@@ -4,7 +4,7 @@ import { Container, Radio, Rating } from "./RatingStyles";
 const Rate = () => {
 const [rate, setRate] = useState(0);
 return (
-	<Container>
+	<Container >
 	{[...Array(5)].map((item, index) => {
 		const givenRating = index + 1;
 		return (
@@ -16,8 +16,8 @@ return (
 				setRate(givenRating);
 			}}
 			/>
-			<Rating>
-			<FaStar
+			<Rating className="h-8 flex w-12" >
+			<FaStar className="h-8 flex w-12 -mt-56"
 				color={
 				givenRating < rate || givenRating === rate
 					? "fcff50"

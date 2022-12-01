@@ -20,22 +20,36 @@ This <b>smart contract</b> was written with ```solidity```, ```hardhat```, ```Pi
 - Creating of Health Center profile.
 - Enabling Ratings and Review
 - Ability for users to know Hospital near them with coordinates
-- Becoming a volunteer for a campaign.
+
 
 # Technologies Used
 
-### Ipfs
+### Polygon
 We made use of pinata IPFS API using file storage to save profile images and return a cid key in other to store on the blockchain so I can retrieve the image at anytime for the account profile.
-### Chanlink Automation
+### Pinata
 Chainlink automation is used to call the end meeting function which is to be called every 24hours I made use of the Time based trigger cron jobs on the chainlink automation interface
 Here is link to the chainlink automation: https://automation.chain.link/mumbai/15126042871348539617950456361182166757342351262351933592710991110229343694907
-### QuickNode
-I used quicknode API to help deploy my smart contract using the Polygon Mumbai test net on the blockchain, it is reliable scalable and work across all major blockchains 
+
 
 
 # Documentation
-Multiple methods provide ways to interact with the XTELPT smart contract. Those are listed below in detail.
-### 1. How to create a User profile
+Multiple methods and ways to interact with the ```BRISKMED``` Project. Those are listed below in detail.
+### Creating Hospital Profile
+
+### Searching Hospital Availability
+
+### Hospitals Review & Rating
+
 
 ## Issues and What I Learnt
+> I ran into some issues some issues like. 
+- Returning a mapping in solidity, which I finally resolved to return a struct,
+- Verifying my smart contract where I could not paste a code if I import a library as a single file.
+- Ethers as when I reload a page I get "INVALID address ENS name error" which was fixed by properly using the useeffect.​
+
+> Some of what we learnt.
+- Proper use of for loop in solidity.
+- Usage of `EthersJS to interact with smart contract which include reading and writing, items like signers and providers.
+
+### They were there to guide me through it and the bootcamp was of great Value.
 
