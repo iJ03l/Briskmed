@@ -15,35 +15,43 @@
     <a href="#issue">Issue?</a>
     </p>
 
+[Live Link]()
+[Contract Link]()
+
+
 # Introduction
 This <b>smart contract</b> was written with ```solidity```, ```hardhat```, ```Pinata``` and on  ```Polygon```. It's has features such as:
 - Creating of Health Center profile.
 - Enabling Ratings and Review
-- Ability for users to know Hospital near them with coordinates
+- Ability for users to know Hospitals near them with coordinates
 
 
 # Technologies Used
 
-### Polygon
-We made use of pinata IPFS API using file storage to save profile images and return a cid key in other to store on the blockchain so I can retrieve the image at anytime for the account profile.
-### Pinata
-Chainlink automation is used to call the end meeting function which is to be called every 24hours I made use of the Time based trigger cron jobs on the chainlink automation interface
-Here is link to the chainlink automation: https://automation.chain.link/mumbai/15126042871348539617950456361182166757342351262351933592710991110229343694907
+- Polygon Testnet
+- Pinata
+- Solidity
 
 
 
 # Documentation
-Multiple methods and ways to interact with the ```BRISKMED``` Project. Those are listed below in detail.
-### Creating Hospital Profile
+> About BriskMed
+### Problem
+Emergency Patients die everyday due to arriving in a filled HealthCare Centers with no capacity to admit or hospital with different area of specialty.
 
-### Searching Hospital Availability
+### Solution
+BriskMed provides the Technological solutions to such problem by letting Healthcare Centers provide these vital informations for the public to see and avoid such situations. Briskmed lets you know the Hospitals around you and General Review/Rating in other to get the perfect care.
 
-### Hospitals Review & Rating
+### Vision
+In few years it should improve the effectiveness of healthcare centers due to taking in specific patients, Knowing what  they should improve on from patience feedback and lastly reduce the cause of death by this very problem. 
+
+## Multiple methods and ways to interact with the ```BRISKMED``` Project. Those are listed below in detail.
+
 
 
 ## Issues and What I Learnt
 > I ran into some issues some issues like. 
-- Returning a mapping in solidity, which I finally resolved to return a struct,
+- Returning a mapping in solidity, which I finally resolved to return a struct.
 - Verifying my smart contract where I could not paste a code if I import a library as a single file.
 - Ethers as when I reload a page I get "INVALID address ENS name error" which was fixed by properly using the useeffect.​
 
@@ -51,5 +59,5 @@ Multiple methods and ways to interact with the ```BRISKMED``` Project. Those are
 - Proper use of for loop in solidity.
 - Usage of `EthersJS to interact with smart contract which include reading and writing, items like signers and providers.
 
-### They were there to guide me through it and the bootcamp was of great Value.
+> Instructors were there to guide me through it and the bootcamp was of great Value.
 
