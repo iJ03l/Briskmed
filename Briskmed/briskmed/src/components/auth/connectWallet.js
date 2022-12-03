@@ -10,7 +10,7 @@ const Connect = () => {
         <div className='w-full relative justify-center items-center flex flex-row'>
             <div className='search-bar'>
                 <div className='grp mt-40'>
-                <text>Connect Wallet</text>
+                <table>Connect Wallet</table>
                 </div>
             </div>
         </div>

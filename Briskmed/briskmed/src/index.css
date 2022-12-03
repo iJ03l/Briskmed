@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.grp > text{
+.grp > table{
     display: block;
     padding: 14px 54px 14px 50px; 
     width: 100%;
