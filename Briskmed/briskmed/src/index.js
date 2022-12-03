@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
+import { BProvider } from './context/BContext';
 
 ReactDOM.render(
   <React.StrictMode>
+    <BProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
+    </BProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

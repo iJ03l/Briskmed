@@ -25,9 +25,9 @@ function Main() {
         <div className='discovery-section h-screen w-full'>
           <Discovery />
         </div>
-        <div className='about-section bg-[#020410] w-full'>
+        {/* <div className='about-section bg-[#020410] w-full'>
           <About />
-        </div>
+        </div> */}
         <div className='footer-section bg-[#9A37E7] w-full'>
           <Footer />
         </div>

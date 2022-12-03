@@ -83,8 +83,8 @@
 font-family: 'Maven Pro';
 font-style: normal;
 font-weight: 900;
-font-size: 74px;
-line-height: 87px;
+font-size: 54px;
+line-height: 67px;
 width: 741px;
 text-align: center;
 background: radial-gradient(87.92% 372.22% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 79.16%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
@@ -139,7 +139,7 @@ background-clip: text;
     line-height: 42px;
     /* text-align: center; */
 
-    background: radial-gradient(60.4% 2305.93% at 22.25% 62.5%, #9A37E7 0%, #adff50 29.92%, #9A37E7 69.61%, #FF5093 100%);
+    background: radial-gradient(60.4% 2305.93% at 22.25% 62.5%, #9A37E7 0%, #FF5093 29.92%, #9A37E7 69.61%, #FF5093 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

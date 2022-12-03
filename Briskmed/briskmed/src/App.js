@@ -14,10 +14,10 @@ function App() {
       <Route path="/" element={<Main />} />
       <Route path="/profile" element={<Profile />} />
       <Route path="/auth" element={<Auth />} />
-      <Route path='/review' element={<Review/>} />
-      <Route path='/search' element={<Search/>} />
-      <Route path='/reviews' element={<ReviewPage/>} />
-      <Route path='/connectWallet' element={<Connect/>} />
+      <Route path='/review' element={<Review />} />
+      <Route path='/search' element={<Search />} />
+      <Route path='/reviews/:addr' element={<ReviewPage />} />
+      <Route path='/connectWallet' element={<Connect />} />
     </Routes>
   );
 

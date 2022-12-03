@@ -17,7 +17,7 @@ const Header = () => {
             </div>
         </div>
         <div className='page-description mt-[-7rem] relative uppercase flex justify-center items-center'>
-            <h1>SOMETHING DOPE AND EXPLANATORY</h1>
+            <h1>Making Healthcare access, fast and effective</h1>
         </div>
     </div>
   )
