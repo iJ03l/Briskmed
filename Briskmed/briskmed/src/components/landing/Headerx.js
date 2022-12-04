@@ -13,7 +13,7 @@ const Headerx = () => {
             <a href={`/search/${text}`}>
               <img src={circle} alt="circle-placeholder" />
             </a>
-            <input onChange={(e) => setText(e.target.value)} type="text" placeholder='Hospital search..' />
+            <input title="Write name in full" onChange={(e) => setText(e.target.value)} type="text" placeholder='Hospital search..' />
           </div>
         </div>
       </div>

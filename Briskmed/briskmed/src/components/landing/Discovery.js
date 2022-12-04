@@ -53,7 +53,7 @@ const Discovery = () => {
             <div className='result-section h-[545px] w-full'>
                 <div className="flex flex-row justify-center gap-11 items-center my-11">
                     {hospital?.map((item) => (
-                        <Link to={`/search/${item?.addr}`}>
+                        <Link to={`/reviews/${item?.addr}`}>
                             <div className='image-wrapper w-80 h-96 shadow-lg rounded-lg  object-cover flex flex-col items-center justify-center py-8 px-10 bg-white'>
                                 <img src={Hospital1} alt="first-black" className='rounded-lg' />
                                 <div className='image-caption flex flex-col items-center justify-center'>
