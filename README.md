@@ -16,7 +16,7 @@
     </p>
 
 [Live Link]()
-[Contract Link]()
+[Contract Link](https://mumbai.polygonscan.com/address/0x46e835Bc224b11da2a0eCbfE2cd8ef04D7B64873)
 
 
 # Introduction
@@ -31,6 +31,7 @@ This <b>smart contract</b> was written with ```solidity```, ```hardhat```, ```Pi
 - Polygon Testnet
 - Pinata
 - Solidity
+- QuikNode
 
 
 
