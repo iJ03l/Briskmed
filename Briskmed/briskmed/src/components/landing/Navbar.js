@@ -16,21 +16,23 @@ const Navbar = () => {
 
 
     try {
-      let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+      window.location.href = '/connectWallet'
 
-      if (accounts.length > 0) {
-        let prof = await briskContract.getProfile(`${accounts[0]}`)
-        console.log(prof)
+      // let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
 
-        if (prof?.image == "") {
-          window.location.href = "/auth"
-        } else {
-          window.location.href = "/profile"
-        }
+      // if (accounts.length > 0) {
+      //   let prof = await briskContract.getProfile(`${accounts[0]}`)
+      //   console.log(prof)
 
-      } else {
-        console.log("no metamask")
-      }
+      //   if (prof?.image == "") {
+      //     window.location.href = "/auth"
+      //   } else {
+      //     window.location.href = "/profile"
+      //   }
+
+      // } else {
+      //   console.log("no metamask")
+      // }
     } catch (err) {
       console.log("an error occured")
     }

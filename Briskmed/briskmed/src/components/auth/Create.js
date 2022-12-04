@@ -1,9 +1,8 @@
 import { ethers } from 'ethers'
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import building from "../../assets/images/building.png"
 import { BContext } from '../../context/BContext'
 import axios from 'axios'
-
 const Create = () => {
 
   const { briskAddress, abi } = useContext(BContext)
@@ -104,9 +103,43 @@ const Create = () => {
 
   }
 
+
+  const connectWallet = async () => {
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const briskContract = new ethers.Contract(briskAddress, abi, provider)
+
+
+    try {
+
+      let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+      if (accounts.length > 0) {
+        let prof = await briskContract.getProfile(`${accounts[0]}`)
+        console.log(prof)
+
+        if (prof?.image == "") {
+          return
+        } else {
+          window.location.href = "/profile"
+        }
+
+      } else {
+        console.log("no metamask")
+      }
+    } catch (err) {
+      console.log("an error occured")
+    }
+  }
+
+  useEffect(() => {
+    connectWallet()
+  })
+
+
+
   return (
     <div className='grid w-full h-full mb-20 place-items-center'>
-      <div className='text-white text-3xl p-5 font-bold'>Create Hospital Profile</div>
+      <div className='text-white feature-header text-center text-3xl p-5 font-bold'><h1>CREATE HOSPITAL PROFILE</h1></div>
 
       <img src={building} width="300px" height="200px" />
       <p className=' text-white w-[426px] py-2 px-2 -mb-2 ' >Hospital Image:</p>

@@ -15,7 +15,7 @@ function App() {
       <Route path="/profile" element={<Profile />} />
       <Route path="/auth" element={<Auth />} />
       <Route path='/review' element={<Review />} />
-      <Route path='/search' element={<Search />} />
+      <Route path='/search/:text' element={<Search />} />
       <Route path='/reviews/:addr' element={<ReviewPage />} />
       <Route path='/connectWallet' element={<Connect />} />
     </Routes>

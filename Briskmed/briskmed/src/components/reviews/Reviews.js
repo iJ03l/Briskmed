@@ -9,7 +9,7 @@ const Reviews = () => {
     const { briskAddress, abi } = useContext(BContext)
 
     const params = useParams();
-    const addr = params.addr
+
     const [loading, setLoading] = useState(false)
     const [name, setName] = useState("")
     const [desc, setDesc] = useState("")
@@ -18,12 +18,14 @@ const Reviews = () => {
 
     const makeReview = async () => {
         setLoading(true)
+        let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+
         const provider = new ethers.providers.Web3Provider(window.ethereum)
         const signer = provider.getSigner();
         const briskContract = new ethers.Contract(briskAddress, abi, signer)
 
         try {
-            await briskContract.postReview(addr, name, desc, rate)
+            await briskContract.postReview(accounts[0], name, desc, rate)
 
         } catch (error) {
             setLoading(false)
@@ -33,28 +35,15 @@ const Reviews = () => {
     }
 
     const updateUIValues = async () => {
+        let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+
         const provider = new ethers.providers.Web3Provider(window.ethereum)
         const briskContract = new ethers.Contract(briskAddress, abi, provider)
 
-        const allReview = await briskContract.getReviews(addr)
+        const allReview = await briskContract.getReviews(accounts[0])
         console.log(allReview)
         setReview(allReview)
 
-        // let arr = []
-
-        // for (let i = 0; i < allHospital.length; i++) {
-        //     let prof = await briskContract.getProfile(allHospital[i])
-
-        //     console.log(prof)
-
-        //     arr.push(prof)
-        // }
-
-        // if (arr.length > 0) {
-        //     setReview(arr)
-        // }
-
-        // console.log(review)
 
     }
 
@@ -82,7 +71,7 @@ const Reviews = () => {
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     )
 }
 
