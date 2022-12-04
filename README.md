@@ -15,7 +15,8 @@
     <a href="#issue">Issue?</a>
     </p>
 
-[Live Link]()
+[Live Link](https://briskmed.vercel.app)
+> 
 [Contract Link](https://mumbai.polygonscan.com/address/0x46e835Bc224b11da2a0eCbfE2cd8ef04D7B64873)
 
 
@@ -46,7 +47,10 @@ BriskMed provides the Technological solutions to such problem by letting Healthc
 ### Vision
 In few years it should improve the effectiveness of healthcare centers due to taking in specific patients, Knowing what  they should improve on from patience feedback and lastly reduce the cause of death by this very problem. 
 
-## Multiple methods and ways to interact with the ```BRISKMED``` Project. Those are listed below in detail.
+## Other ways to interact with the ```BRISKMED``` Project. Those are listed below in detail.
+- Users give rating just by connecting wallet
+- Only Hospitals can create a profile
+- Quick Hospital search.
 
 
 
